@@ -6,4 +6,5 @@ export const shortcuts: Shortcut[] = [
   ['center', 'items-center justify-center'],
   [/^hactive:(.*)$/, ([, c]) => `hover:${c} active:${c}`],
   [/^@hactive:(.*)$/, ([, c]) => `@hover:${c} active:${c}`],
+  [/^group-@active:(.*)$/, ([, c]) => `[.active_&]:${c}`],
 ]
