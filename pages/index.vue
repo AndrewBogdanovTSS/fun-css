@@ -1,6 +1,6 @@
 <template>
-  <div class="duration active f-col h-screen center" :class="active ? 'bg-brand-1' : 'bg-brand-2'">
-    <div class="opt-1 opt-2 group-@active:text-sm">
+  <div class="duration bg-brand-1 f-col h-screen center lg:bg-brand-2">
+    <div>
       <functional-switch v-model="active" />
       <template v-if="active">
         <h2>Functional buttons</h2>
