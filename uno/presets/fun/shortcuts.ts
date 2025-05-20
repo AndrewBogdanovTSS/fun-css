@@ -7,4 +7,5 @@ export const shortcuts: Shortcut[] = [
   [/^hactive:(.*)$/, ([, c]) => `hover:${c} active:${c}`],
   [/^@hactive:(.*)$/, ([, c]) => `@hover:${c} active:${c}`],
   [/^group-@active:(.*)$/, ([, c]) => `[.active_&]:${c}`],
+  [/^\|(.*)$/, ([, c]) => `uno-layer-override:${c}`],
 ]
