@@ -17,11 +17,11 @@
         </div>
       </template>
       <template v-else>
-        <h2 class="@sm:c-red-1">
+        <h2 class="@sm:c-red-100">
           Traditional buttons
         </h2>
         <div class="flex gap-4">
-          <traditional-btn variant="one" class="|@hactive:c-red-3">
+          <traditional-btn variant="one" class="|@hactive:c-red-300">
             Variant One
           </traditional-btn>
           <traditional-btn variant="two">

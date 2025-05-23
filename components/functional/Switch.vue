@@ -15,19 +15,19 @@
     <span
       class="duration rounded-full flex w-12 peer-focus-visible:outline-auto"
       :class="[
-        model ? 'bg-green-6' : 'bg-gray-6',
-        { 'c-gray-7': disabled, '|bg-gray-6': disabled && model },
+        model ? 'bg-green-600' : 'bg-gray-600',
+        { 'c-gray-7': disabled, '|bg-gray-600': disabled && model },
       ]"
     >
       <span
-        class="duration b-gray-2 rounded-full b-solid bg-white h-6 w-6 transform"
+        class="duration b-gray-200 rounded-full b-solid bg-white h-6 w-6 transform"
         :class="{ 'translate-x-full': model }"
       />
     </span>
     <span
       aria-hidden="true"
       class="c-gray-1 text-sm pl-2 flex items-center"
-      :class="{ 'c-gray-2': disabled }"
+      :class="{ 'c-gray-200': disabled }"
     >
       {{ labelOn }}
     </span>

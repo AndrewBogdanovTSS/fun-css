@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="duration ring-gray-4 c-white rounded ring-offset-2"
+    class="duration c-white rounded ring-gray-400 ring-offset-2"
     :class="[classesVariant, classesSize, classesDisabled]"
     :disabled
   >
@@ -17,9 +17,9 @@ const { variant = 'one', size = 'md', disabled = false } = defineProps<{
 }>()
 
 const classesVariant = computed(() => ({
-  one: 'bg-green-6 hover:bg-green-4',
-  two: 'bg-orange-6 hover:bg-orange-4',
-  three: 'bg-blue-6 hover:bg-blue-4',
+  one: 'bg-green-600 hover:bg-green-400',
+  two: 'bg-orange-600 hover:bg-orange-400',
+  three: 'bg-blue-600 hover:bg-blue-400',
 }[variant]))
 
 const classesSize = computed(() => ({
