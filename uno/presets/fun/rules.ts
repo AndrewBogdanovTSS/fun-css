@@ -1,5 +1,11 @@
 import type { Rule } from 'unocss'
 
 export const rules: Rule[] = [
-  ['duration', { 'transition-duration': '250ms' }],
+  [
+    /^@duration(?:-(.+))?$/, ([, d], { symbols }) =>
+      ({
+        [symbols.parent]: '@media (prefers-reduced-motion: no-preference)',
+        'transition-duration': d ? `${d}ms` : '250ms',
+      }),
+  ],
 ]

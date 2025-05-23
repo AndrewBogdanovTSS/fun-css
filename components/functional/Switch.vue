@@ -1,10 +1,5 @@
 <template>
-  <functional-toggle
-    v-model="model"
-    class="i-flex"
-    role="switch"
-    :disabled
-  >
+  <functional-toggle v-model="model" class="i-flex" role="switch" :disabled>
     <span
       aria-hidden="true"
       class="c-gray-1 text-sm pr-2 flex items-center"
@@ -13,14 +8,14 @@
       {{ labelOff }}
     </span>
     <span
-      class="duration rounded-full flex w-12 peer-focus-visible:outline-auto"
+      class="rounded-full flex w-12 @duration peer-focus-visible:outline-auto"
       :class="[
         model ? 'bg-green-600' : 'bg-gray-600',
         { 'c-gray-7': disabled, '|bg-gray-600': disabled && model },
       ]"
     >
       <span
-        class="duration b-gray-200 rounded-full b-solid bg-white h-6 w-6 transform"
+        class="b-gray-200 rounded-full b-solid bg-white h-6 w-6 transform @duration"
         :class="{ 'translate-x-full': model }"
       />
     </span>
