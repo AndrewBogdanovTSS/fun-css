@@ -8,14 +8,14 @@
       {{ labelOff }}
     </span>
     <span
-      class="rounded-full flex w-12 @duration peer-focus-visible:outline-auto"
+      class="rounded-full flex w-12 peer-focus-visible:outline-auto 🐌transition-colors"
       :class="[
         model ? 'bg-green-600' : 'bg-gray-600',
         { 'c-gray-7': disabled, '|bg-gray-600': disabled && model },
       ]"
     >
       <span
-        class="b-gray-200 rounded-full b-solid bg-white h-6 w-6 transform @duration"
+        class="b-gray-200 rounded-full b-solid bg-white h-6 w-6 transform 🐌duration-500"
         :class="{ 'translate-x-full': model }"
       />
     </span>
