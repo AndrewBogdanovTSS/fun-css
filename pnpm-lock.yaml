@@ -30,6 +30,9 @@ importers:
       '@unocss/preset-web-fonts':
         specifier: ^66.1.2
         version: 66.1.2
+      '@unocss/preset-wind4':
+        specifier: ^66.1.2
+        version: 66.1.2
       css-media-splitter:
         specifier: ^0.2.8
         version: 0.2.8(magicast@0.3.5)

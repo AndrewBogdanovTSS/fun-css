@@ -21,6 +21,7 @@
     "@unocss/eslint-config": "^66.1.2",
     "@unocss/nuxt": "^66.1.2",
     "@unocss/preset-web-fonts": "^66.1.2",
+    "@unocss/preset-wind4": "^66.1.2",
     "css-media-splitter": "^0.2.8",
     "eslint": "^9.27.0",
     "npm-check-updates": "^18.0.1",
