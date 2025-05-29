@@ -11,5 +11,8 @@ export const shortcuts: Shortcut[] = [
   [/^hactive:(.*)$/, ([, c]) => `hover:${c} active:${c}`],
   [/^@hactive:(.*)$/, ([, c]) => `@hover:${c} active:${c}`],
   [/^group-@active:(.*)$/, ([, c]) => `[.active_&]:${c}`],
+  // Pipe Override
   [/^\|(.*)$/, ([, c]) => `uno-layer-override:${c}`],
+  // Custom CSS properties with a fallback
+  [/^(.+)-\$(.+)\/(.+)$/, ([, p, v, f]) => `${p}-[var(--${v},${f})]`],
 ]
