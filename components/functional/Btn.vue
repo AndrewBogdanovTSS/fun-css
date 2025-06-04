@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="duration c-white rounded ring-gray-400 ring-offset-2"
+    class="c-white rounded ring-gray-400 ring-offset-2 duration"
     :class="[classesVariant, classesSize, classesDisabled]"
     :disabled
   >

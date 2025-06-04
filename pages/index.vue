@@ -1,5 +1,5 @@
 <template>
-  <div class="duration bg-brand-1 f-col h-screen center lg:bg-brand-2">
+  <div class="bg-brand-1 f-col h-screen duration center lg:bg-brand-2">
     <div>
       <functional-switch v-model="active" />
       <template v-if="active">
