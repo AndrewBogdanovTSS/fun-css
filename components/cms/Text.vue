@@ -12,6 +12,6 @@ import type { Responsive } from '~/types'
 
 defineProps<{
   text: string
-  color?: Responsive
+  color: Responsive
 }>()
 </script>
