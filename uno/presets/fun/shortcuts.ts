@@ -6,6 +6,7 @@ export const shortcuts: Shortcut[] = [
   ['center', 'items-center justify-center'],
   ['duration', 'duration-250'],
   [/^🐌(.*)$/, ([, c]) => `motion-safe:${c}`],
+  [/^ga-(.*)$/, ([, c]) => `grid-area-${c}`],
   // [/^@duration(.*)$/, ([, c]) => `motion-safe:duration${c}`],
   // [/^@transition(.*)$/, ([, c]) => `motion-safe:transition${c}`],
   [/^hactive:(.*)$/, ([, c]) => `hover:${c} active:${c}`],
