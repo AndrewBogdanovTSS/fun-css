@@ -1,15 +1,28 @@
 [
   {
-    "type": "image",
+    "type": "bg",
     "area": {
       "sm": "1/1/2/2"
     },
     "payload": {
-      "alt": "Image 1",
+      "color": {
+        "sm": "#000000",
+        "md": "#000000",
+        "lg": "#000000"
+      }
+    }
+  },
+  {
+    "type": "pic",
+    "area": {
+      "sm": "1/1/2/2"
+    },
+    "payload": {
+      "alt": "Pic 1",
       "src": {
-        "sm": "https://picsum.photos/200/300",
-        "md": "https://picsum.photos/200/300",
-        "lg": "https://picsum.photos/200/300"
+        "sm": "https://picsum.photos/seed/picsum/200/300",
+        "md": "https://picsum.photos/seed/picsum/200/300",
+        "lg": "https://picsum.photos/seed/picsum/200/300"
       },
       "width": {
         "sm": "400",
