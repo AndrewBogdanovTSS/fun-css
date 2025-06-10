@@ -6,6 +6,7 @@
     "#root/*": "./*"
   },
   "scripts": {
+    "analyze": "nuxi analyze",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
