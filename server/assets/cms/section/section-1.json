@@ -1,74 +1,60 @@
 {
   "layout": {
-    "cols": "repeat(2, 1fr)",
-    "rows": "repeat(2, 1fr)"
+    "cols": {
+      "sm": "1fr",
+      "md": "repeat(2, 1fr)",
+      "lg": "repeat(3, 1fr)"
+    },
+    "rows": {
+      "sm": "repeat(3, 1fr)",
+      "md": "repeat(2, 1fr)",
+      "lg": "1fr"
+    }
   },
   "items": [
     {
-      "type": "bg",
+      "type": "module-1",
       "area": {
-        "sm": "1/1/3/4",
-        "md": "1/2/3/4"
+        "sm": "1/1/2/2",
+        "md": "1/1/2/3",
+        "lg": "1/1/2/2"
       },
       "payload": {
         "color": {
-          "sm": "#000000"
+          "sm": "#648fa3",
+          "md": "#84bc8f",
+          "lg": "#f0c48e"
         }
       }
     },
     {
-      "type": "pic",
+      "type": "module-2",
       "area": {
-        "sm": "1/1/3/4",
-        "md": "1/1/3/4",
-        "lg": "1/1/3/2"
+        "sm": "2/1/3/2",
+        "md": "2/1/3/2",
+        "lg": "1/2/2/3"
       },
       "payload": {
-        "alt": "Pic 1",
-        "src": {
-          "sm": "https://picsum.photos/id/10/400/600",
-          "md": "https://picsum.photos/id/11/800/600",
-          "lg": "https://picsum.photos/id/12/1200/600"
-        },
-        "width": {
-          "sm": "400",
-          "md": "800",
-          "lg": "1200"
-        },
-        "height": {
-          "sm": "400",
-          "md": "800",
-          "lg": "1200"
+        "color": {
+          "sm": "#4f728b",
+          "md": "#649683",
+          "lg": "#eca981"
         }
       }
     },
     {
-      "type": "text",
+      "type": "module-3",
       "area": {
-        "sm": "1/1/2/4",
-        "md": "1/3/2/4",
+        "sm": "3/1/4/2",
+        "md": "2/2/3/3",
         "lg": "1/3/2/4"
       },
       "payload": {
-        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "color": {
-          "sm": "#ff00cc",
-          "md": "#ffffcc",
-          "lg": "#0000cc"
+          "sm": "#3a5670",
+          "md": "#93c8a5",
+          "lg": "#e4907b"
         }
-      }
-    },
-    {
-      "type": "btn",
-      "area": {
-        "sm": "2/1/3/4",
-        "md": "1/1/3/4",
-        "lg": "2/2/3/3"
-      },
-      "payload": {
-        "variant": "Item 2",
-        "text": "Click me",
-        "to": "https://www.google.com"
       }
     }
   ]

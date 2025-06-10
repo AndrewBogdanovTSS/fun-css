@@ -1,5 +1,5 @@
 <template>
   <div class="h-screen f-col">
-    <cms-section id="1" />
+    <lazy-cms-section id="1" class="grow" hydrate-on-interaction />
   </div>
 </template>
