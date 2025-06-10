@@ -1,7 +1,5 @@
 <template>
-  <div class="f-col h-screen">
-    <div class="">
-      <cms-section id="1" />
-    </div>
+  <div class="h-screen f-col">
+    <cms-section id="1" />
   </div>
 </template>
