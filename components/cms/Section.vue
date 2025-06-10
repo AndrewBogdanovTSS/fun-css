@@ -1,8 +1,15 @@
 <template>
-  <section class="grid">
+  <section
+    class="grid"
+    :style="{
+      'grid-template-columns': data?.layout.cols,
+      'grid-template-rows': data?.layout.rows,
+    }"
+  >
     <div
-      v-for="({ type, area, payload }, i) in data as any"
+      v-for="({ type, area, payload }, i) in data?.items as any"
       :key="type + i"
+      class="flex center"
       :class="{ 'ga-$ga': area.sm, 'md:ga-$ga-md': area.md, 'lg:ga-$ga-lg': area.lg }"
       :style="{ '--ga': area.sm, '--ga-md': area.md, '--ga-lg': area.lg }"
     >
