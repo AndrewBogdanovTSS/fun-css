@@ -9,6 +9,9 @@ export default defineNuxtConfig({
       prefix: 'cms',
     },
   ],
+  imports: {
+    dirs: ['utils/*/*.ts'],
+  },
   devtools: { enabled: true },
   compatibilityDate: '2024-11-01',
   eslint: {

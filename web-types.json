@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JetBrains/web-types/master/schema/web-types.json",
+  "name": "canvas",
+  "framework": "vue",
+  "version": "1.0.0",
+  "js-types-syntax": "typescript",
+  "description-markup": "markdown",
+  "default-icon": "icons/vue.svg",
+  "framework-config": {
+    "enable-when": {
+      "node-packages": ["vue", "@vue/cli"],
+      "file-extensions": ["vue"],
+      "ide-libraries": ["vue"]
+    }
+  },
+  "contributions": {
+    "html": {
+      "vue-directives": [
+        {
+          "name": "style",
+          "description": "Generates UnoCSS classes and CSS variables based on responsive config. It allows automatically bind certain CSS property on certain screen resolution. Directive can be found at 'domains/core/plugins/style/index.ts' ",
+          "attribute-value": {
+            "type": "ResponsiveStyles",
+            "required": true
+          },
+          "argument": {
+            "name": "property name",
+            "description": "Single style property name",
+            "pattern": {
+              "or": [
+                "bg",
+                "ga",
+                "cols",
+                "rows",
+                "h"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
