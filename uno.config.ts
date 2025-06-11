@@ -1,9 +1,9 @@
-import { defineConfig, presetWind3 } from 'unocss'
+import { defineConfig, presetMini } from 'unocss'
 import { funPreset } from './uno/presets/fun'
 
 export default defineConfig({
   presets: [
-    presetWind3(),
+    presetMini(),
     funPreset(),
   ],
 })
